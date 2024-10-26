@@ -37,11 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'task.apps.TaskConfig',
-    'accounts'
+    'accounts',
 
 ]
+
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
